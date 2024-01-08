@@ -1,0 +1,20 @@
+JobDriver threw exception in toil FinishRecipeAndStartStoringProduct's initAction for pawn Moses driver=JobDriver_DoBill (toilIndex=16) driver.job=(DoBill (Job_463094) A=Thing_FueledStove113084 B=Thing_RawBerries118135 C=(149, 0, 116))
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.AI.Toils_Recipe+<>c__DisplayClass3_0.<FinishRecipeAndStartStoringProduct>b__0 () [0x000f2] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at Verse.AI.JobDriver.TryActuallyStartNextToil () [0x001b0] in <cd7169108ea74757aa50c5b33d275c15>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+(wrapper dynamic-method) Verse.AI.JobUtility:Verse.AI.JobUtility.TryStartErrorRecoverJob_Patch1 (Verse.Pawn,string,System.Exception,Verse.AI.JobDriver)
+Verse.AI.JobDriver:TryActuallyStartNextToil ()
+Verse.AI.JobDriver:ReadyForNextToil ()
+Verse.AI.JobDriver:TryActuallyStartNextToil ()
+Verse.AI.JobDriver:ReadyForNextToil ()
+Verse.AI.Toils_Recipe/<>c__DisplayClass2_0:<DoRecipeWork>b__1 ()
+Verse.AI.JobDriver:DriverTick ()
+Verse.AI.Pawn_JobTracker:JobTrackerTick ()
+Verse.Pawn:Tick ()
+Verse.TickList:Tick ()
+(wrapper dynamic-method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch3 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+Verse.Game:UpdatePlay ()
+(wrapper dynamic-method) Verse.Root_Play:Verse.Root_Play.Update_Patch1 (Verse.Root_Play)
